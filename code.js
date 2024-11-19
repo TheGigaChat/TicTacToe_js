@@ -44,10 +44,27 @@ function checkScore() {
 
   winningCombos.forEach((arr) => {
     let circleWins = arr.every((cell) => {
-      console.log(allSquares[cell].firstChild?.classList[0]);
+      return allSquares[cell].firstChild?.classList.contains("circle");
     });
     if (circleWins) {
       infoDisplay.textContent = "Circle Wins!";
+      //stops the eventListeners to not update data if circle wins
+      allSquares.forEach((square) =>
+        square.replaceWith(square.cloneNode(true))
+      );
+    }
+  });
+
+  winningCombos.forEach((arr) => {
+    let crossWins = arr.every((cell) => {
+      return allSquares[cell].firstChild?.classList.contains("cross");
+    });
+    if (crossWins) {
+      infoDisplay.textContent = "Cross Wins!";
+      //stops the eventListeners to not update data if cross wins
+      allSquares.forEach((square) =>
+        square.replaceWith(square.cloneNode(true))
+      );
     }
   });
 }
