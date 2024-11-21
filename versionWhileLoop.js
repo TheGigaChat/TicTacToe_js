@@ -1,7 +1,8 @@
 //Init
 let term = "Circle"; // O or X
-let termSign = "O";
+let termSign = "O "; // should add space here to don't add it everywhere
 let winner = false;
+let termCount = 1;
 
 //Board
 let a = "_ "; //1
@@ -29,40 +30,31 @@ while (winner === false) {
 
   //term logics
   if (userChoice === "1") {
-    a = termSign + " "; // x !== X be carefull
+    a = termSign; // x !== X be carefull
   }
   if (userChoice === "2") {
-    b = termSign + " ";
+    b = termSign;
   }
   if (userChoice === "3") {
-    c = termSign + " ";
+    c = termSign;
   }
   if (userChoice === "4") {
-    d = termSign + " ";
+    d = termSign;
   }
   if (userChoice === "5") {
-    e = termSign + " ";
+    e = termSign;
   }
   if (userChoice === "6") {
-    f = termSign + " ";
+    f = termSign;
   }
   if (userChoice === "7") {
-    g = termSign + " ";
+    g = termSign;
   }
   if (userChoice === "8") {
-    h = termSign + " ";
+    h = termSign;
   }
   if (userChoice === "9") {
-    j = termSign + " ";
-  }
-
-  //toggle the term
-  if (term === "Circle") {
-    term = "Cross";
-    termSign = "X";
-  } else {
-    term = "Circle";
-    termSign = "O";
+    j = termSign;
   }
 
   /*   if (userChoice === "a") {
@@ -81,9 +73,61 @@ while (winner === false) {
     winner = "Cross";
   } */ // we can't just check the all combinations, as it not just 9 for circle
 
-  if (a && b && c === "X") {
-    winner = "Cross";
+  // if (a && b && c === termSign) - incorrect code
+
+  //winner checker
+  //lines check
+  if (a === termSign && b === termSign && c === termSign) {
+    winner = term;
   }
+
+  // Check horizontally
+  if (d === termSign && e === termSign && f === termSign) {
+    winner = term;
+  }
+  if (g === termSign && h === termSign && j === termSign) {
+    winner = term;
+  }
+
+  // Check vertically
+  if (a === termSign && d === termSign && g === termSign) {
+    winner = term;
+  }
+  if (b === termSign && e === termSign && h === termSign) {
+    winner = term;
+  }
+  if (c === termSign && f === termSign && j === termSign) {
+    winner = term;
+  }
+
+  // Check diagonally
+  if (a === termSign && e === termSign && j === termSign) {
+    winner = term;
+  }
+  if (c === termSign && e === termSign && g === termSign) {
+    winner = term;
+  }
+
+  // Check the draw
+  if (termCount === 9) {
+    winner = "Draw";
+  }
+
+  //toggle the term
+  if (term === "Circle") {
+    term = "Cross";
+    termSign = "X ";
+  } else {
+    term = "Circle";
+    termSign = "O ";
+  }
+
+  //count the term
+  termCount = termCount + 1; // termCount = 3 + 1
 }
 
-alert(winner + " is a winner!");
+if (winner === "Draw") {
+  alert("It is a draw!");
+} else {
+  alert(winner + " is a winner!");
+}
