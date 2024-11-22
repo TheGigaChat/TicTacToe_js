@@ -1,28 +1,28 @@
 //Init
-let term = "Circle"; // O or X
-let termSign = "O "; // should add space here to don't add it everywhere
+let term = "Circle"; // Circle or Cross
+let termSign = "O "; // O or X. Should add space here to don't add it everywhere
 let winner = false;
 let termCount = 1;
 
 //Board
-let a = "_ "; //1
-let b = "_ "; //2
-let c = "_ ";
+let one = "_ "; // 1 to 9. Prefer to use one, not first, as it is shorter
+let two = "_ ";
+let tree = "_ ";
 
-let d = "_ ";
-let e = "_ ";
-let f = "_ ";
+let four = "_ ";
+let five = "_ ";
+let six = "_ ";
 
-let g = "_ ";
-let h = "_ ";
-let j = "_"; //9
+let seven = "_ ";
+let eight = "_ ";
+let nine = "_";
 
-let board = a + b + c + "\n" + d + e + f + "\n" + g + h + j; //"_ _ _ \n_ _ _ \n_ _ _"
+let board = one + two + tree + "\n" + four + five + six + "\n" + seven + eight + nine; //"_ _ _ \n_ _ _ \n_ _ _"
 
 // All term
 while (winner === false) {
   //reassigning the board
-  board = a + b + c + "\n" + d + e + f + "\n" + g + h + j;
+  board = one + two + tree + "\n" + four + five + six + "\n" + seven + eight + nine;
 
   let userChoice = prompt(
     "Put the number of the tile \n" + term + " term \n" + board
@@ -30,36 +30,32 @@ while (winner === false) {
 
   //term logics
   if (userChoice === "1") {
-    a = termSign; // x !== X be carefull
+    one = termSign; // x !== X be carefull
   }
   if (userChoice === "2") {
-    b = termSign;
+    two = termSign;
   }
   if (userChoice === "3") {
-    c = termSign;
+    tree = termSign;
   }
   if (userChoice === "4") {
-    d = termSign;
+    four = termSign;
   }
   if (userChoice === "5") {
-    e = termSign;
+    five = termSign;
   }
   if (userChoice === "6") {
-    f = termSign;
+    six = termSign;
   }
   if (userChoice === "7") {
-    g = termSign;
+    seven = termSign;
   }
   if (userChoice === "8") {
-    h = termSign;
+    eight = termSign;
   }
   if (userChoice === "9") {
-    j = termSign;
+    nine = termSign;
   }
-
-  /*   if (userChoice === "a") {
-    eval(userChoice + " = 'some code'");
-  } */ //do I really need it?
 
   /*   if (board === "X X X \n4 5 6 \n7 8 9") {
     winner = "Cross";
@@ -73,38 +69,41 @@ while (winner === false) {
     winner = "Cross";
   } */ // we can't just check the all combinations, as it not just 9 for circle
 
+  /*   else {
+    alert("Tile already taken! Try again.");
+    continue; // Skip the rest of the loop
+  } */ // it will be much harder to create the tree of if statements rather than the column as I have
+
   // if (a && b && c === termSign) - incorrect code
 
-  //winner checker
-  //lines check
-  if (a === termSign && b === termSign && c === termSign) {
-    winner = term;
-  }
-
+  // winner checker
   // Check horizontally
-  if (d === termSign && e === termSign && f === termSign) {
+  if (one === termSign && two === termSign && tree === termSign) {
     winner = term;
   }
-  if (g === termSign && h === termSign && j === termSign) {
+  if (four === termSign && five === termSign && six === termSign) {
+    winner = term;
+  }
+  if (seven === termSign && eight === termSign && nine === termSign) {
     winner = term;
   }
 
   // Check vertically
-  if (a === termSign && d === termSign && g === termSign) {
+  if (one === termSign && four === termSign && seven === termSign) {
     winner = term;
   }
-  if (b === termSign && e === termSign && h === termSign) {
+  if (two === termSign && five === termSign && eight === termSign) {
     winner = term;
   }
-  if (c === termSign && f === termSign && j === termSign) {
+  if (tree === termSign && six === termSign && nine === termSign) {
     winner = term;
   }
 
   // Check diagonally
-  if (a === termSign && e === termSign && j === termSign) {
+  if (one === termSign && five === termSign && nine === termSign) {
     winner = term;
   }
-  if (c === termSign && e === termSign && g === termSign) {
+  if (tree === termSign && five === termSign && seven === termSign) {
     winner = term;
   }
 
