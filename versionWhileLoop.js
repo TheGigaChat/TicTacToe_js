@@ -57,6 +57,12 @@ while (winner === false) {
     nine = termSign;
   }
 
+  //starts from
+  /*   if (board === "_ _ _ \n_ _ _ \n_ _ _") {
+    winner = "Cross";
+  }
+
+  //next
   /*   if (board === "X X X \n4 5 6 \n7 8 9") {
     winner = "Cross";
   }
