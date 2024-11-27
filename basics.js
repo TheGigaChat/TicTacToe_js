@@ -51,8 +51,22 @@ let personInRoom = true
 // }
 
 // challenge
-let engineWorks = true
-let personInCar = true
-let carLock = false
+// let engineWorks = true
+// let personInCar = false
+// let carLock = false
 
-// rules. If person in car => turn off the carLock and start the engine, oterwise turn on the carLock and turn off the engine. If engineWorks => type in the console the sentence "Brum-brum. I am ready!"
+// // rules. If person in car => turn off the carLock and start the engine. If person Not in the car => turn on the carLock and turn off the engine. If engineWorks => type in the console the sentence "Brum-brum. I am ready!"
+// // code
+// if (personInCar === true) {
+//     carLock = false
+//     engineWorks = true
+// } else {
+//     carLock = true
+//     engineWorks = false
+// }
+
+// if (engineWorks) {
+//     console.log("Brum-brum. I am ready!")
+// }
+
+// console.log(engineWorks, personInCar, carLock)
