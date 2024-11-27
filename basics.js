@@ -4,7 +4,11 @@
 // console.log("Hi, how are you?")
 
 // Variables
-let x = "Hi, how are you?"  // 'I'm creating a variable I can change.'
-console.log(x)
-x = 1
-console.log(x)
+// let x  // (initialisation or init) block in our memory
+// x = "Hi, how are you?"  // 'I'm creating a variable I can change.' (declaration)
+// let y = 10  // init and declare
+// console.log(x)
+// x = 1  // (reasignment)
+// console.log(x)
+
+//
