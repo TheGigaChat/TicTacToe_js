@@ -25,7 +25,14 @@
 // console.log(formula)
 
 // challenge
-// let myFormula // parameter a, b, c => sum of a and c + b multiplies c
+// let myFormula // parameter a, b, c => sum of a and c and summerise with b multiplies c. Then show the result in the console.
+
+// code solution
+/* let a = 10
+let b = 2
+let c = 5
+let myFormula = (a + c) + b * c
+console.log(myFormula) */
 
 
 // If statements
@@ -33,8 +40,8 @@
 // statement = false
 
 //example
-let light = true
-let personInRoom = true
+// let light = true
+// let personInRoom = true
 
 // if (personInRoom === true) {  // common "=" in the math, comparison. true === true => true
 //     light = true
@@ -56,7 +63,7 @@ let personInRoom = true
 // let carLock = false
 
 // // rules. If person in car => turn off the carLock and start the engine. If person Not in the car => turn on the carLock and turn off the engine. If engineWorks => type in the console the sentence "Brum-brum. I am ready!"
-// // code
+// // code solution
 // if (personInCar === true) {
 //     carLock = false
 //     engineWorks = true
