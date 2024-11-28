@@ -24,7 +24,7 @@
 // let formula = a + b
 // console.log(formula)
 
-// challenge
+// Challenge
 // let myFormula // parameter a, b, c => sum of a and c and summerise with b multiplies c. Then show the result in the console.
 
 // code solution
@@ -35,6 +35,7 @@ let myFormula = (a + c) + b * c
 console.log(myFormula) */
 
 
+// THIRD EPISODE
 // If statements
 // let statement = true
 // statement = false
@@ -57,7 +58,7 @@ console.log(myFormula) */
 //     light = false
 // }
 
-// challenge
+// Challenge
 // let engineWorks = true
 // let personInCar = false
 // let carLock = false
@@ -77,3 +78,41 @@ console.log(myFormula) */
 // }
 
 // console.log(engineWorks, personInCar, carLock)
+
+
+// FOURTH EPISODE
+// alert("Hi user!") - first function
+// let usualMessage = alert("You have an error!")
+
+// prompt("Hi I am a prompt!")
+// let usersAge = prompt("How old are you?")
+// console.log(usersAge)  // "" - emply string
+
+// let userAge = prompt("How old are you?")
+// alert(`Your age is: ${userAge}!`)  // alt + 96
+
+// let num1 = 100
+// let num2 = 99
+// alert(`100 - 99 = ${100 - 99}!`)  // we can do math inside of the fstring
+
+// let userAge = prompt("How old are you?")
+// alert(`Your age after 10 years is: ${userAge + 10}!`)  // alt + 96
+
+// //concatination 
+// console.log(10 + 55)  // sum in math. Requires (2 numbers), num + num
+// console.log("10" + "55") // sum of strings => concationation. Requires (2 strings), string + string
+// console.log("10" + 55) // string and number (convert) => string + string
+//prompt => string or null (it never returns number)
+
+//How to solve the problem?
+let a = "10"
+let b = 100
+console.log(a + b)
+console.log(parseInt(a) + b)  // parseInt change the string to number
+console.log(parseInt("number") + 10 * 8)  // try to parseInt not valid number => number (NaN) - non a number
+
+// Challenge
+// Ask the name and age of a user. Then show in the console the year when the user was been borned.
+// Example of the rerult => "Artur was been borned in the 1925 year."
+
+// code solution
