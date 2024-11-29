@@ -105,11 +105,11 @@ console.log(myFormula) */
 //prompt => string or null (it never returns number)
 
 //How to solve the problem?
-let a = "10"
-let b = 100
-console.log(a + b)
-console.log(parseInt(a) + b)  // parseInt change the string to number
-console.log(parseInt("number") + 10 * 8)  // try to parseInt not valid number => number (NaN) - non a number
+// let a = "10"
+// let b = 100
+// console.log(a + b)
+// console.log(parseInt(a) + b)  // parseInt change the string to number
+// console.log(parseInt("number") + 10 * 8)  // try to parseInt not valid number => number (NaN) - non a number
 
 // Challenge
 // Ask the name and age of a user. Then show in the console the year when the user was been borned.
