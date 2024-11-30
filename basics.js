@@ -112,7 +112,24 @@ console.log(myFormula) */
 // console.log(parseInt("number") + 10 * 8)  // try to parseInt not valid number => number (NaN) - non a number
 
 // Challenge
-// Ask the name and age of a user. Then show in the console the year when the user was been borned.
+// Ask the name and age of a user. Then if user's age is a number, show the year when the user was been borned with an alert message. Otherwise show the message "You didn't type your age.". 
 // Example of the rerult => "Artur was been borned in the 1925 year."
 
-// code solution
+// // code solution
+// let usersName = prompt("Hi! What is your name?")
+// let usersAge = prompt("How old are you?")
+
+// //How to calculate the year?
+// // Borned: 2001
+// // Current age: 23
+// // Current year: 2024
+// // Borned => Current year - Current age
+// let currentYear = 2024
+// usersAge = parseInt(usersAge)
+
+// if (usersAge === NaN) {
+//     alert("You didn't type your age.")
+// } else {
+//     let userWasBorn = currentYear - usersAge  // JavaScript automatically change the data type from string to number, because JS doesn't have opiration as (string or number - string)
+//     alert(userWasBorn)
+// }
