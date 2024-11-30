@@ -112,7 +112,7 @@ console.log(myFormula) */
 // console.log(parseInt("number") + 10 * 8)  // try to parseInt not valid number => number (NaN) - non a number
 
 // Challenge
-// Ask the name and age of a user. Then if user's age is a number, show the year when the user was been borned with an alert message. Otherwise show the message "You didn't type your age.". 
+// Ask the name and age of a user. Then if user's age is a number, show the year when the user was been borned with an alert message. Example of the message: Bob was born in 1997. Otherwise show the message "You didn't type your age.". 
 // Example of the rerult => "Artur was been borned in the 1925 year."
 
 // // code solution
@@ -131,5 +131,60 @@ console.log(myFormula) */
 //     alert("You didn't type your age.")
 // } else {
 //     let userWasBorn = currentYear - usersAge  // JavaScript automatically change the data type from string to number, because JS doesn't have opiration as (string or number - string)
-//     alert(userWasBorn)
+//     alert(`${usersName} was born in ${usersAge}.`)
 // }
+
+
+// FIFTH EPISODE
+//random
+// console.log(Math.random() * 25 + 1)
+// let roundedNumber = Math.round(Math.random())  // 0-0.4 => 0 and 0.5-0.9 => 1
+// console.log(roundedNumber)
+// let floorNumber = Math.floor(Math.random())  // 0-0.9 => 0
+// console.log(floorNumber)
+// let ceilNumber = Math.ceil(Math.random())  // 0-0.9 => 1
+// console.log(ceilNumber)
+
+// And, Or signs(&& ||)
+// let workerName = "Bob"
+// let time = 12
+// let isWorking = false  //true or false
+// console.log(isWorking)
+//Rules. If worker's name is Bob and time is less than 12, then Bob is working.
+// if (workerName === "Bob") {  //inconvinient way as we need to write false twice
+//     if (time < 12) {
+//         isWorking = true
+//     } else {
+//         isWorking = false
+//     }
+// } else {
+//     isWorking = false
+// }
+
+// if (workerName === "Bob" && time < 12) {
+//     isWorking = true
+// } else {
+//     isWorking = false
+// }
+// console.log(isWorking)
+
+// rock, paper, scissors code project.  // Not challenge, but project. Understand the rules.
+//Inputs
+let usersChoise = prompt("rock, paper or scissors?")
+let AIChoise = Math.floor(Math.random() * 3 + 1) // includes and exclude [) 0-1 * 25 => 0-25  // 0-1 * 2 => 0-2 + 1 => 1-2.999 => round to 1-3. Which function rounds 0.9 ot 0? How to explain!!!!
+console.log(AIChoise)
+
+if (AIChoise === 1) {
+    AIChoise = "rock"
+}
+if (AIChoise === 2) {
+    AIChoise = "paper"
+}
+if (AIChoise === 3) {
+    AIChoise = "scissors"
+}
+
+//Game logic
+if (usersChoise === "rock" && AIChoise === "rock") {
+    //code
+}
