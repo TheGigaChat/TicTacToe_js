@@ -98,9 +98,9 @@ console.log(myFormula) */
 // let userAge = prompt("How old are you?")
 // alert(`Your age after 10 years is: ${userAge + 10}!`)  // alt + 96
 
-// //concatination 
+// //concatenation 
 // console.log(10 + 55)  // sum in math. Requires (2 numbers), num + num
-// console.log("10" + "55") // sum of strings => concationation. Requires (2 strings), string + string
+// console.log("10" + "55") // sum of strings => concatenation. Requires (2 strings), string + string
 // console.log("10" + 55) // string and number (convert) => string + string
 //prompt => string or null (it never returns number)
 
@@ -227,6 +227,58 @@ console.log(myFormula) */
 //     alert("We have a draw.")
 // } else {
 //     alert(`${winner} wins the battle.`)
+// }
+
+//Challenge (Russian Roulette)
+//Rules. In the game is a player and the AI. You have one pistol. You start to shoot. 50% chance that there will be a bullet. If you don't have the bullet, give the pistol to the AI and he starts to shoot, but if you has a bullet, show the message: "AI was shot...". If both are missed, display the message: "Both combatants emerged unscathed." Then display the winner. Example: "Player was shot..." OR "AI was shot...".
+// let player = "Name"  // not use them
+// let AI = "AI"
+// let bulletChance = Math.floor(Math.random() * 2)
+// let dead  // may create it for simplicity
+// console.log(bulletChance)  // test the chance
+
+//Game logic
+// if (bulletChance === 1) {  //is bullet
+//     alert("AI was shot...")
+// } else {
+//     if (bulletChance === 1) {  //is bullet
+//         alert("Player was shot...")
+//     } else {
+//         alert("Both combatants emerged unscathed.")
+//     }
+// }
+
+//Display the message  // if you need
+// if (dead === "no one") {
+//     alert("Both combatants emerged unscathed.")
+// } else {
+//     alert(`${dead} was shot...`)
+// }
+
+// console.log(bulletChance)
+// console.log(bulletChance)
+// console.log(bulletChance)
+// console.log(bulletChance)
+// console.log(bulletChance)
+// console.log(bulletChance)
+// console.log(bulletChance)
+
+// console.log(bulletChance = Math.floor(Math.random() * 2))
+// console.log(bulletChance = Math.floor(Math.random() * 2))
+// console.log(bulletChance = Math.floor(Math.random() * 2))
+// console.log(bulletChance = Math.floor(Math.random() * 2))
+// console.log(bulletChance = Math.floor(Math.random() * 2))
+
+//Game logic fixed
+// if (bulletChance === 1) {  //is bullet
+//     alert("AI was shot...")
+// } else {
+//     bulletChance = Math.floor(Math.random() * 2)
+//     if (bulletChance === 1) {  //is bullet
+//         alert("Player was shot...")
+//     } else {
+//         alert("Both combatants emerged unscathed.")
+//     }
 // }
 
 
