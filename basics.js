@@ -45,7 +45,7 @@ console.log(myFormula) */
 // let personInRoom = true
 
 // if (personInRoom === true) {  // common "=" in the math, comparison. true === true => true
-//     light = true
+//     light = true  // don't use word let accidentally
 // }
 
 // if (personInRoom === false) {  // true === false => false
@@ -168,23 +168,66 @@ console.log(myFormula) */
 // }
 // console.log(isWorking)
 
-// rock, paper, scissors code project.  // Not challenge, but project. Understand the rules.
+
+// rock, paper, scissors code project.  // Not challenge, but project. Understand the rules. https://www.napkin.ai/
 //Inputs
-let usersChoise = prompt("rock, paper or scissors?")
-let AIChoise = Math.floor(Math.random() * 3 + 1) // includes and exclude [) 0-1 * 25 => 0-25  // 0-1 * 2 => 0-2 + 1 => 1-2.999 => round to 1-3. Which function rounds 0.9 ot 0? How to explain!!!!
-console.log(AIChoise)
+// let userChoice = prompt("rock, paper or scissors?")
+// let AIChoice = Math.floor(Math.random() * 3 + 1) // includes and exclude [) 0-1 * 25 => 0-25  // 0-1 * 2 => 0-2 + 1 => 1-2.999 => round to 1-3. Which function rounds 0.9 ot 0? How to explain!!!!
+// // console.log(AIChoice)
 
-if (AIChoise === 1) {
-    AIChoise = "rock"
-}
-if (AIChoise === 2) {
-    AIChoise = "paper"
-}
-if (AIChoise === 3) {
-    AIChoise = "scissors"
-}
+// if (AIChoice === 1) {
+//     AIChoice = "rock"
+// }
+// if (AIChoice === 2) {
+//     AIChoice = "paper"
+// }
+// if (AIChoice === 3) {
+//     AIChoice = "scissors"
+// }
 
-//Game logic
-if (usersChoise === "rock" && AIChoise === "rock") {
-    //code
-}
+// //Game logic
+// let winner = "draw"
+// // if (usersChoise === "rock" && AIChoice === "rock") {
+// //     winner = "draw"
+// // }
+// // if (usersChoise === "paper" && AIChoice === "paper") {
+// //     winner = "draw"
+// // }
+// // if (usersChoise === "scissors" && AIChoice === "scissors") {
+// //     winner = "draw"
+// // }
+
+// //simplify previous 3 if statements to 1
+// if (userChoice === AIChoice) {  // draw  // want to show the way how we can simplify our statements
+//     winner = "draw"
+// }
+// // user wins
+// if (userChoice === "rock" && AIChoice === "scissors") {
+//     winner = "User"
+// }
+// if (userChoice === "paper" && AIChoice === "rock") {
+//     winner = "User"
+// }
+// if (userChoice === "scissors" && AIChoice === "paper") {
+//     winner = "User"
+// }
+// // AI wins
+// if (AIChoice === "rock" && userChoice === "scissors") {
+//     winner = "AI"
+// }
+// if (AIChoice === "paper" && userChoice === "rock") {
+//     winner = "AI"
+// }
+// if (AIChoice === "scissors" && userChoice === "paper") {
+//     winner = "AI"
+// }
+
+// //Display the winner
+// if (winner === "draw") {  // if the input is incorrect we will have a draw. We will learn how to control user's inputs in future episodes. 
+//     alert("We have a draw.")
+// } else {
+//     alert(`${winner} wins the battle.`)
+// }
+
+
+// SIXTH EPISODE
