@@ -24,6 +24,11 @@
 // let formula = a + b
 // console.log(formula)
 
+// let number = 5
+// console.log(number)
+// number = number + 5
+// console.log(number)
+
 // Challenge
 // let myFormula // parameter a, b, c => sum of a and c and summerise with b multiplies c. Then show the result in the console.
 
@@ -283,3 +288,55 @@ console.log(myFormula) */
 
 
 // SIXTH EPISODE
+//while loop
+// let userNumberString = prompt("Type a number that is greater than 10.")
+// let userNumber = parseInt(userNumberString)  // change from string to number
+
+// if (userNumber > 10) {
+//     alert("You typed a valid number.")
+// } else {
+//     userNumberString = prompt("You haven't typed a number. Plese type a number.")
+// }
+
+// userNumber = parseInt(userNumberString)
+
+// if (userNumber > 10) {
+//     alert("You typed a valid number.")
+// } else {
+//     userNumberString = prompt("You haven't typed a number. Plese type a number.")
+// }
+
+// let myNum = 1  // 6
+
+// while (myNum < 100) {  // statement 
+//     myNum = myNum + 5
+//     // console.log(myNum)
+//     let num2 = 1  // How to fix
+//     num2 = num2 + 5
+//     console.log(num2)
+// }
+
+// let myNum = 1  // 6
+// let num2 = 1  // outside of the loop
+//While loop rules 1. Don't declare the values inside the while loop. Start to declare them outside and only if you need it, put inside of the while loop.
+//If your value dosen't change => you declared it inside of the while loop.
+
+// while (myNum < 100) {  // statement 
+//     myNum = myNum + 5
+//     // console.log(myNum)
+//     num2 = num2 + 5
+//     console.log(num2)
+// }
+
+//While loop rules 2. Always check that you change the statement inside of the while loop.
+//If your loop is infinite => you don't change the statement of the loop.
+
+// let isLight = true
+// while (isLight === true) {  //Infinite loop
+//     console.log("Hacked!")  //show
+//     alert("Your light is turned on.")
+//    // isLight = false
+// }
+
+
+//code challenge (validation)
