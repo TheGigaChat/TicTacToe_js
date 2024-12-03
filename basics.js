@@ -2,6 +2,8 @@
 // First programm
 // console.log("Hello world!")
 // console.log("Hi, how are you?")
+// My first recording
+// Test 2
 
 
 // Variables
@@ -86,7 +88,7 @@ console.log(myFormula) */
 
 
 // FOURTH EPISODE
-// alert("Hi user!") - first function
+// alert("Hi user!") //- first function
 // let usualMessage = alert("You have an error!")
 
 // prompt("Hi I am a prompt!")
