@@ -3,8 +3,7 @@
 // console.log("Hello world!")
 // console.log("Hi, how are you?")
 // My first recording
-// Test 2
-
+// console.log("My name is Drake.")
 
 // Variables
 // let x  // (initialisation or init) block in our memory
@@ -293,15 +292,15 @@ console.log(myFormula) */
 //while loop
 // let userNumberString = prompt("Type a number that is greater than 10.")
 // let userNumber = parseInt(userNumberString)  // change from string to number
-
+// 
 // if (userNumber > 10) {
 //     alert("You typed a valid number.")
 // } else {
 //     userNumberString = prompt("You haven't typed a number. Plese type a number.")
 // }
-
+// 
 // userNumber = parseInt(userNumberString)
-
+// 
 // if (userNumber > 10) {
 //     alert("You typed a valid number.")
 // } else {
@@ -338,7 +337,69 @@ console.log(myFormula) */
 //     console.log("Hacked!")  //show
 //     alert("Your light is turned on.")
 //    // isLight = false
+//    // break 
+// }
+
+// continue keyword
+// let exam = false
+// let studentID = Math.floor(Math.random() * 10 + 1)  // valid from 6 to 10
+// let examGrade = Math.floor(Math.random() * 5 + 1)  // random from 3 to 5
+
+// while (exam === false) {
+//     studentID = Math.floor(Math.random() * 10 + 1)
+//     examGrade = Math.floor(Math.random() * 5 + 1)
+//     console.log(`Student ID: ${studentID}.`)
+//     // console.log(`Exam grade: ${examGrade}.`)
+
+//     if (studentID <= 5) {  // from 0 to 5 are invalid => start a loop again
+//         continue
+//     }
+
+//     // if (examGrade >= 3) {
+//     //     exam = true  // valid exit
+//     // }
+
+//     break
 // }
 
 
+
 //code challenge (validation)
+//Rules. Ask 3 questions from user, where he should choose first or second options. For example: "Cats or Dogs?". Then collect all the information and show in one message, like "Daniel prefers cats, he like tee more than coffee and his favourite number is 8.". The main purpose is to validate each answer and ask it again if the answer is wrong. For example: "Question: Cats or Dogs?" => "Answer: 23jffl" => "Question: Invalid answer. Cats or Dogs?". If may choose any questions.
+
+// code solution
+// let isValidAnswer = false
+// let invalidAnswerMessage = "Invalid answer. "  //not necessary
+// let userName = prompt("Hi. What is your name?")  // "", null
+// console.log(userName)
+
+// while (isValidAnswer === false) {
+//     //start my validation
+//     if (userName === "") {
+//         userName = prompt(invalidAnswerMessage + "What is your name?")
+//         continue
+//     } 
+
+//     if (userName === null) {
+//         userName = prompt(invalidAnswerMessage + "What is your name?")
+//         continue
+//     } 
+
+//     isValidAnswer = true
+//     // break  // for safety, we can delete this when we are sure that we have another exit from the while loop
+// }
+
+
+// let dogsOrCats = prompt("Dogs or Cats?")
+// let teeOrCoffee = prompt("Tee or Coffee?")
+// let favouriteNumber = prompt("Your favourite number from 0 to 9?")
+
+
+
+// while (isValidAnswer === false) {
+//     //start my validation
+
+
+//     isValidAnswer = true
+// }
+
