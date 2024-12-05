@@ -337,7 +337,7 @@ console.log(myFormula) */
 //     console.log("Hacked!")  //show
 //     alert("Your light is turned on.")
 //    // isLight = false
-//    // break 
+//    // break   // stops the loop immediately and go next
 // }
 
 // continue keyword
@@ -349,31 +349,33 @@ console.log(myFormula) */
 //     studentID = Math.floor(Math.random() * 10 + 1)
 //     examGrade = Math.floor(Math.random() * 5 + 1)
 //     console.log(`Student ID: ${studentID}.`)
-//     // console.log(`Exam grade: ${examGrade}.`)
+
 
 //     if (studentID <= 5) {  // from 0 to 5 are invalid => start a loop again
 //         continue
 //     }
 
-//     // if (examGrade >= 3) {
-//     //     exam = true  // valid exit
-//     // }
+//     console.log(`Exam grade: ${examGrade}.`)
 
-//     break
+//     if (examGrade >= 3) {
+//         exam = true  // valid exit
+//     }
+
+//     // break
 // }
 
 
 
 //code challenge (validation)
-//Rules. Ask 3 questions from user, where he should choose first or second options. For example: "Cats or Dogs?". Then collect all the information and show in one message, like "Daniel prefers cats, he like tee more than coffee and his favourite number is 8.". The main purpose is to validate each answer and ask it again if the answer is wrong. For example: "Question: Cats or Dogs?" => "Answer: 23jffl" => "Question: Invalid answer. Cats or Dogs?". If may choose any questions.
+//Rules. Ask 3 questions from user, where he should choose first or second options. For example: "Cats or Dogs?". Then collect all the information and show in one message, like "Daniel prefers cats, he likes tee more than coffee and his favourite number is 8.". The main purpose is to validate each answer and ask it again if the answer is wrong. For example: "Question: Cats or Dogs?" => "Answer: 23jffl" => "Question: Invalid answer. Cats or Dogs?". If may choose any questions.
 
 // code solution
-// let isValidAnswer = false
+// let isValidAnswer = false  // I will delete it during the process
 // let invalidAnswerMessage = "Invalid answer. "  //not necessary
 // let userName = prompt("Hi. What is your name?")  // "", null
 // console.log(userName)
 
-// while (isValidAnswer === false) {
+// while (true) {
 //     //start my validation
 //     if (userName === "") {
 //         userName = prompt(invalidAnswerMessage + "What is your name?")
@@ -385,21 +387,68 @@ console.log(myFormula) */
 //         continue
 //     } 
 
-//     isValidAnswer = true
-//     // break  // for safety, we can delete this when we are sure that we have another exit from the while loop
+//     break  // for safety, we can delete this when we are sure that we have another exit from the while loop
 // }
 
 
 // let dogsOrCats = prompt("Dogs or Cats?")
-// let teeOrCoffee = prompt("Tee or Coffee?")
-// let favouriteNumber = prompt("Your favourite number from 0 to 9?")
 
+// while (true) {
+//     // console.log("Infinete?")
+//     if (dogsOrCats === "Dogs" || dogsOrCats === "dogs") {
+//         // isValidAnswer = true  // will loop start again?
+//         break  // will loop start again and will loop show the next lines of the code?
+//     }
 
+//     if (dogsOrCats === "Cats" || dogsOrCats === "cats") {
+//         // isValidAnswer = true 
+//         break
+//     }
 
-// while (isValidAnswer === false) {
-//     //start my validation
-
-
-//     isValidAnswer = true
+//     dogsOrCats = prompt(invalidAnswerMessage + "Dogs or Cats?")
 // }
 
+
+// // Why I don't recomend to copy and paste now. You are not comfident in the topic, so you should memorise the syntax and it might be really frustrating when you are copy and paste some things, as it easy to won't notice what you should change.
+
+// // If you want to copy and paste and after that you code dosen't work, delete part that you copyed and write it again, but manually
+// let teeOrCoffee = prompt("Tee or Coffee?")
+
+// while (true) {
+//     // console.log("Infinete?")
+//     if (teeOrCoffee === "Tee" || teeOrCoffee === "tee") {
+//         // isValidAnswer = true
+//         break  // will loop start again and will loop show the next lines of the code?
+//     }
+
+//     if (teeOrCoffee === "Coffee" || teeOrCoffee === "coffee") {
+//         // isValidAnswer = true 
+//         break
+//     }
+
+//     teeOrCoffee = prompt(invalidAnswerMessage + "Dogs or Cats?")
+//     break
+// }
+
+
+// let favouriteNumber = prompt("Your favourite number from 0 to 9?")
+
+// // while (true) {
+// //     if (favouriteNumber < 0 || favouriteNumber > 9) {
+// //         favouriteNumber = prompt(invalidAnswerMessage + "Your favourite number from 0 to 9?")
+// //         continue
+// //     }
+
+// //     break
+// // }
+
+// while (favouriteNumber < 0 || favouriteNumber > 9) {  // updated version
+//     favouriteNumber = prompt(invalidAnswerMessage + "Your favourite number from 0 to 9?")
+// }
+
+// //Show the final message
+// if (teeOrCoffee === "Tee" || teeOrCoffee === "tee") {
+//     alert(`${userName} prefers cats, he likes tee more than coffee and his favourite number is ${favouriteNumber}.`)
+// } else {
+//     alert(`${userName} prefers cats, he likes coffee more than tee and his favourite number is ${favouriteNumber}.`)
+// }
