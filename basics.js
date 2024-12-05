@@ -367,7 +367,7 @@ console.log(myFormula) */
 
 
 //code challenge (validation)
-//Rules. Ask 3 questions from user, where he should choose first or second options. For example: "Cats or Dogs?". Then collect all the information and show in one message, like "Daniel prefers cats, he likes tee more than coffee and his favourite number is 8.". The main purpose is to validate each answer and ask it again if the answer is wrong. For example: "Question: Cats or Dogs?" => "Answer: 23jffl" => "Question: Invalid answer. Cats or Dogs?". If may choose any questions.
+//Rules. Ask 3 questions from user, where he should choose first or second options. For example: "Cats or Dogs?". Then collect all the information and show in one message, like "Daniel prefers cats, he likes tee more than coffee and his favourite number is 8.". The main purpose is to validate each answer and ask it again if the answer is wrong. For example: "Question: Cats or Dogs?" => "Answer: 23jffl" => "Question: Invalid answer. Cats or Dogs?". If may choose any questions. You can use as many while loops and variables as you want.
 
 // code solution
 // let isValidAnswer = false  // I will delete it during the process
