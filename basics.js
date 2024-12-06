@@ -2,8 +2,6 @@
 // First programm
 // console.log("Hello world!")
 // console.log("Hi, how are you?")
-// My first recording
-// console.log("My name is Drake.")
 
 // Variables
 // let x  // (initialisation or init) block in our memory
