@@ -1,12 +1,6 @@
-"use strict"  // promote good habits
+"use strict"
 
-// console.log("My name is Artur")  // first data type - string
-// console.log("My dog's name is Drake.")
+// console.log("Pizza!")
 
-
-//Variables
-// let myName = "Dave"
-// console.log(myName)
-
-// myName = "Billy"
-// console.log(myName)
+let myFirstVariable = "My name is Drake."
+console.log(myFirstVariable)
