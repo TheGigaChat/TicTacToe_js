@@ -1,6 +1,12 @@
 "use strict"
 
-// console.log("Pizza!")
+// console.log("My name is Dave.")  // string
 
-let myFirstVariable = "My name is Drake."
-console.log(myFirstVariable)
+// let myDogsName = "Drake"
+// console.log(myDogsName)
+
+let myGrade = 5
+console.log(myGrade)
+
+myGrade = 4
+console.log(myGrade)
