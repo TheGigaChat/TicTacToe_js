@@ -5,8 +5,8 @@
 // let myDogsName = "Drake"
 // console.log(myDogsName)
 
-let myGrade = 5
-console.log(myGrade)
+    // let myGrade = 5
+    // console.log(myGrade)
 
-myGrade = 4
-console.log(myGrade)
+    // myGrade = 4
+    // console.log(myGrade)
